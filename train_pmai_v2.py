@@ -75,7 +75,7 @@ optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-4)
 scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.5)
 
 # Eğitim Döngüsü
-total_epochs = 20
+total_epochs = 1
 best_val_loss = float('inf')
 early_stopping_patience = 3
 patience_counter = 0
@@ -130,7 +130,7 @@ if __name__ == '__main__':  # Ana program bloğu
         if avg_val_loss < best_val_loss:
             best_val_loss = avg_val_loss
             patience_counter = 0
-            torch.save(model.state_dict(), "best_model_v2.pth")
+            torch.save(model.state_dict(), "best_model.pth")
             print("  ↪ Yeni en iyi model kaydedildi!")
         else:
             patience_counter += 1
@@ -144,7 +144,7 @@ if __name__ == '__main__':  # Ana program bloğu
     
     
     # Final Model Kaydetme
-    torch.save(model.state_dict(), "final_model_v2.pth")
+    torch.save(model.state_dict(), "final_model.pth")
     print("\nEğitim tamamlandı!")
 
     
