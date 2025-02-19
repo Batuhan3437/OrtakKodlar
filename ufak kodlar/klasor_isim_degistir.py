@@ -15,7 +15,7 @@ def rename_folders(base_dir):
                     os.rename(subfolder_path, new_subfolder_path)
                     print(f"{subfolder_name} ismi değiştirildi: {new_name}")
  
-base_directory = r"D:\Projeler\UniversiteProjeler\PlantMasterAI\PlantMaster_Veriler\BIRLESTIRILMIS\VeriSetOrj224\VeriSetOrj224"  
+base_directory = r"D:\Projeler\UniversiteProjeler\PlantMasterAI\PlantMaster_Veriler\BIRLESTIRILMIS\Veri Setleri\Veri Setleri Sınıflandırılmış (Orijinal)"  
 rename_folders(base_directory)
  
  

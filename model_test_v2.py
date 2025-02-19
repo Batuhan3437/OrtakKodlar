@@ -11,8 +11,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # Sabit değerler
-MODEL_PATH = "best_model.pth"  # Eğitilmiş model dosyası
-CLASS_INDICES_PATH = "class_indices.json"  # Sınıf isimlerinin kaydedildiği dosya
+MODEL_PATH = r"D:\Projeler\UniversiteProjeler\PlantMasterAI\OrtakKodlar\final_model.pth"  # Eğitilmiş model dosyası
+CLASS_INDICES_PATH = r"D:\Projeler\UniversiteProjeler\PlantMasterAI\OrtakKodlar\class_indices.json"  # Sınıf isimlerinin kaydedildiği dosya
 
 # Cihaz seçimi
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

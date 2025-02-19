@@ -3,7 +3,7 @@ import shutil
  
 old_base_directory = input("Base directory yolunu girin: ").strip().strip('"').strip("'")
  
-new_base_directory = os.path.join(os.path.dirname(old_base_directory), 'verisetiyeni')
+new_base_directory = os.path.join(os.path.dirname(old_base_directory), 'Veri Seti SınıflandırılmışV2')
  
 if not os.path.exists(new_base_directory):
     os.makedirs(new_base_directory)
